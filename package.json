@@ -14,8 +14,12 @@
   "contributes": {
     "commands": [
       {
-        "command": "branch-alert.helloWorld",
-        "title": "Hello World"
+        "command": "branch-alert.showAlert",
+        "title": "Show Alert"
+      },
+      {
+        "command": "branch-alert.debug",
+        "title": "debug debug"
       }
     ]
   },
