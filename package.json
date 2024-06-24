@@ -1,7 +1,7 @@
 {
   "name": "branch-alert",
   "displayName": "branch-alert",
-  "description": "This extension alert using branch.",
+  "description": "This extension alerts when using a specific branch.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.89.0"
@@ -9,17 +9,16 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:branch-alert.checkBranch",
+    "onDidSaveTextDocument"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "branch-alert.showAlert",
-        "title": "Show Alert"
-      },
-      {
-        "command": "branch-alert.debug",
-        "title": "debug debug"
+        "command": "branch-alert.checkBranch",
+        "title": "Check Current Branch"
       }
     ]
   },

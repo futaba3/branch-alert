@@ -8,6 +8,12 @@
 		"out": true, // set this to false to include "out" folder in search results
 		"dist": true // set this to false to include "dist" folder in search results
 	},
+	
 	// Turn off tsc task auto detection since we have the necessary tasks as npm scripts
-	"typescript.tsc.autoDetect": "off"
+	"typescript.tsc.autoDetect": "off",
+
+	"terminal.integrated.shell.linux": "/bin/bash",
+  	"terminal.integrated.env.osx": {
+    "PATH": "/Users/ayana/.nvm/versions/node/v20.5.0/bin:${env:PATH}"
+  }
 }
