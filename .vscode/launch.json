@@ -26,9 +26,11 @@
     "configurations": [
         {
             "name": "Run Extension",
-            "type": "extensionHost",
+            // "type": "extensionHost",
+            "type": "node",
             "request": "launch",
             "runtimeExecutable": "${execPath}",
+            "program": "${workspaceFolder}/out/extension.js",
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}"
             ],
